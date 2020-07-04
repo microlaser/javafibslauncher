@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Fibs
+Comment=javafibs
+Exec=sh /home/michael/fibs.sh
+Icon=/home/michael/JavaFIBS2001/JavaFIBS.ico
+Terminal=false
+Type=Application
+StartupNotify=true
