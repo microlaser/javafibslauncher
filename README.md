@@ -9,18 +9,19 @@
 Because these paths are compiled into the package, the interface typically loads with missing textures and broken board elements.
 
 ## 🛠 The Workaround
-I designed this launcher to bridge the gap between the legacy Java application and the Linux filesystem. By forcing the working directory through a shell wrapper, the application can correctly map its assets.
+I designed this launcher to bridge the gap between the legacy Java application and the Linux filesystem. By forcing the working directory through a shell wrapper, the application can correctly map its assets, making it completely playable on Linux.
 
-This project was built manually—**without AI assistance**—specifically to ensure a seamless experience for Linux users.
+This project was built manually—**without AI assistance (vibe coding)**—specifically to ensure a seamless experience for Linux users.
 
 ---
 
 ## ⚠️ Configuration Required (Critical)
-Both the shell script and the desktop launcher contain paths specific to my local environment. **You must modify both files** to match your own filesystem.
+Both the shell script and the desktop launcher contain paths specific to my local environment. **You must modify both files** to match your own filesystem for the launcher to function.
 
 ### 1. Update the Shell Script (`fibs.sh`)
 Open `fibs.sh` and change the directory path to your local JavaFIBS folder:
 ```bash
 #!/bin/bash
+# Change the path below to your actual directory
 cd /home/YOUR_USERNAME/JavaFIBS2001/
 java -jar JavaFIBS-1.0.11_JDK16.jar
